@@ -3,45 +3,84 @@ import { ArrowRight, ExternalLink, Github } from "lucide-react";
 const projects = [
   {
     id: 1,
-    title: "Chat Web App",
+    title: "AI Data Assistant (Ollama + FastAPI)",
     description:
-      "A real-time chat application built with React.js, Node.js, Express.js, MongoDB, and Socket.IO. Features JWT authentication, REST APIs, and WebSocket messaging for seamless communication.",
-    image: "/projects/Project1.jpg",
- // replace with your project screenshot
-    tags: ["React.js", "Node.js", "Express.js", "MongoDB", "Socket.IO"],
-    demoUrl: "#", 
-    githubUrl: "https://github.com/aksingh4545", // replace with project repo if separate
+      "An intelligent data assistant that converts natural language questions into pandas queries using Mistral (Ollama). Built with FastAPI, it executes queries on structured datasets and returns both computed results and plain-language explanations.",
+    image: "/projects/ai-agent.jpg",
+    tags: ["FastAPI", "Ollama", "Mistral", "Pandas", "Python", "LLM"],
+    demoUrl: "#",
+    githubUrl: "https://github.com/aksingh4545/ai-data-agent.git",
   },
   {
     id: 2,
-    title: "Library Management System",
+    title: "Real-Time Streaming Pipeline (Kafka + Flink)",
     description:
-      "A full-stack Library Management application to handle book records, borrowing, and user management. Built with modern web technologies ensuring scalability and ease of use.",
-    image: "/projects/Library.jpg", // replace with your project screenshot
-    tags: ["React.js", "Node.js", "Express.js", "MySQL", "MongoDB"],
+      "End-to-end real-time data processing system using Kafka for ingestion and Apache Flink for event-time processing. Containerized with Docker and designed for scalable, fault-tolerant stream analytics.",
+    image: "/projects/flink-kafka.jpg",
+    tags: ["Kafka", "Apache Flink", "Docker", "Streaming", "Event-Time"],
     demoUrl: "#",
-    githubUrl: "https://github.com/aksingh4545", // replace with project repo if separate
+    githubUrl: "https://github.com/aksingh4545/flink-kafka.git",
+  },
+  {
+    id: 3,
+    title: "MLOps Pipeline with MLflow",
+    description:
+      "Production-ready ML system that predicts student performance. Includes ML pipeline training, MLflow model registry, FastAPI inference service, Dockerized deployment, and reproducible workflows.",
+    image: "/projects/mlops.jpg",
+    tags: ["MLflow", "FastAPI", "Docker", "MLOps", "Python"],
+    demoUrl: "#",
+    githubUrl: "https://github.com/aksingh4545/mlflow_pipeline.git",
+  },
+  {
+    id: 4,
+    title: "Airflow → Snowflake Automated Pipeline",
+    description:
+      "Automated data ingestion pipeline orchestrated with Apache Airflow. Loads data into Snowflake with CI/CD integration using GitHub Actions for automated deployment and version control.",
+    image: "/projects/airflow.jpg",
+    tags: ["Airflow", "Snowflake", "GitHub Actions", "ETL", "SQL"],
+    demoUrl: "#",
+    githubUrl: "https://github.com/aksingh4545/airflow-snowflake-pipeline.git",
+  },
+  {
+    id: 5,
+    title: "Azure Event Hub Real-Time Architecture",
+    description:
+      "Cloud-native streaming system: Azure Event Hub → ADLS → Databricks → Delta Lake → Cosmos DB. Designed for reliable event-time processing and analytics-ready data serving.",
+    image: "/projects/azure.jpg",
+    tags: ["Azure", "Databricks", "Delta Lake", "Event Hub", "Cosmos DB"],
+    demoUrl: "#",
+    githubUrl: "https://github.com/aksingh4545/Event_hub.git",
+  },
+  {
+    id: 6,
+    title: "Serverless Image Processing (AWS)",
+    description:
+      "Event-driven AWS architecture where images uploaded to S3 trigger Lambda-based resizing with Pillow. Processed images are stored and notifications sent via SNS.",
+    image: "/projects/aws-serverless.jpg",
+    tags: ["AWS", "Lambda", "S3", "SNS", "Serverless"],
+    demoUrl: "#",
+    githubUrl: "https://github.com/aksingh4545/image_resize.git",
   },
 ];
 
 export const ProjectsSection = () => {
   return (
     <section id="projects" className="py-24 px-4 relative">
-      <div className="container mx-auto max-w-5xl">
+      <div className="container mx-auto max-w-6xl">
         <h2 className="text-3xl md:text-4xl font-bold mb-4 text-center">
           Featured <span className="text-primary">Projects</span>
         </h2>
 
-        <p className="text-center text-muted-foreground mb-12 max-w-2xl mx-auto">
-          Here are some of my projects showcasing my backend and full-stack
-          development skills. Each project is designed with scalability,
-          performance, and real-world usability in mind.
+        <p className="text-center text-muted-foreground mb-12 max-w-3xl mx-auto">
+          Production-focused data engineering, real-time streaming, cloud-native
+          architectures, and MLOps systems demonstrating scalable, reliable,
+          and deployment-ready solutions.
         </p>
 
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-          {projects.map((project, key) => (
+          {projects.map((project) => (
             <div
-              key={key}
+              key={project.id}
               className="group bg-card rounded-lg overflow-hidden shadow-xs card-hover"
             >
               <div className="h-48 overflow-hidden">
@@ -70,23 +109,22 @@ export const ProjectsSection = () => {
                 <p className="text-muted-foreground text-sm mb-4">
                   {project.description}
                 </p>
-                <div className="flex justify-between items-center">
-                  <div className="flex space-x-3">
-                    <a
-                      href={project.demoUrl}
-                      target="_blank"
-                      className="text-foreground/80 hover:text-primary transition-colors duration-300"
-                    >
-                      <ExternalLink size={20} />
-                    </a>
-                    <a
-                      href={project.githubUrl}
-                      target="_blank"
-                      className="text-foreground/80 hover:text-primary transition-colors duration-300"
-                    >
-                      <Github size={20} />
-                    </a>
-                  </div>
+
+                <div className="flex space-x-3">
+                  <a
+                    href={project.demoUrl}
+                    target="_blank"
+                    className="text-foreground/80 hover:text-primary transition-colors duration-300"
+                  >
+                    <ExternalLink size={20} />
+                  </a>
+                  <a
+                    href={project.githubUrl}
+                    target="_blank"
+                    className="text-foreground/80 hover:text-primary transition-colors duration-300"
+                  >
+                    <Github size={20} />
+                  </a>
                 </div>
               </div>
             </div>
@@ -99,7 +137,7 @@ export const ProjectsSection = () => {
             target="_blank"
             href="https://github.com/aksingh4545"
           >
-            Check My Github <ArrowRight size={16} />
+            View All Projects <ArrowRight size={16} />
           </a>
         </div>
       </div>

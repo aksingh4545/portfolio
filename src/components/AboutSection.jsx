@@ -9,28 +9,27 @@ export const AboutSection = () => {
         </h2>
 
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+          
           {/* Left Side */}
           <div className="space-y-6">
-          <h3 className="text-2xl font-semibold">
-  Aspiring Full Stack Developer
-</h3>
-
-<p className="text-muted-foreground">
-  I’m <span className="font-semibold">Ankit Kumar Singh</span>, a Computer
-  Science & Engineering student at SISTec-R (Bhopal). Passionate about
-  building complete web solutions — from intuitive front-end interfaces with{" "}
-  <b>React.js</b> to secure, scalable back-end systems using{" "}
-  <b>Node.js, Express.js, and MongoDB</b>. I aim to craft applications that
-  are responsive, performant, and impactful.
-</p>
-
+            <h3 className="text-2xl font-semibold">
+              Data Engineer | Real-Time Systems | Cloud & MLOps
+            </h3>
 
             <p className="text-muted-foreground">
-              I enjoy solving real-world problems, contributing to open-source,
-              and continuously learning new technologies to grow into a skilled
-              backend engineer. Experienced in full-stack development through
-              projects like <b>Web Chat App</b> using React.js, Node.js, Express.js,
-              MongoDB, and Socket.IO.
+              I’m <span className="font-semibold">Ankit Kumar Singh</span>, a Data Engineer 
+              specialized in building scalable data platforms, real-time streaming systems, 
+              and production-ready ML pipelines. I work with technologies like 
+              <b> Databricks, Snowflake, Kafka, Airflow, Flink, PySpark, DBT, and Terraform</b> 
+              to design reliable ETL/ELT pipelines with strong data governance and security.
+            </p>
+
+            <p className="text-muted-foreground">
+              My experience includes designing event-driven architectures on 
+              <b> AWS & Azure</b>, building real-time ingestion pipelines 
+              (Kafka → Flink → Delta Lake), implementing MLOps workflows using 
+              <b> MLflow + FastAPI + Docker</b>, and automating deployments with 
+              <b> Git & Jenkins</b>. I focus on performance, scalability, and clean architecture.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 pt-4 justify-center">
@@ -39,7 +38,7 @@ export const AboutSection = () => {
               </a>
 
               <a
-                href="/Ak_POD.pdf" // you can replace with Google Drive link
+                href="/Ak_POD.pdf"
                 download
                 className="px-6 py-2 rounded-full border border-primary text-primary hover:bg-primary/10 transition-colors duration-300"
               >
@@ -50,16 +49,17 @@ export const AboutSection = () => {
 
           {/* Right Side */}
           <div className="grid grid-cols-1 gap-6">
+
             <div className="gradient-border p-6 card-hover">
               <div className="flex items-start gap-4">
                 <div className="p-3 rounded-full bg-primary/10">
-                  <Code className="h-6 w-6 text-primary" />
+                  <Database className="h-6 w-6 text-primary" />
                 </div>
                 <div className="text-left">
-                  <h4 className="font-semibold text-lg">Web Development</h4>
+                  <h4 className="font-semibold text-lg">Data Engineering</h4>
                   <p className="text-muted-foreground">
-                    Full-stack projects using React.js, Node.js, Express, and
-                    Socket.IO with modern JavaScript practices.
+                    End-to-end ETL/ELT pipelines using Spark, PySpark, DBT, Snowflake, 
+                    Databricks, and Airflow with cloud-native architecture.
                   </p>
                 </div>
               </div>
@@ -68,13 +68,13 @@ export const AboutSection = () => {
             <div className="gradient-border p-6 card-hover">
               <div className="flex items-start gap-4">
                 <div className="p-3 rounded-full bg-primary/10">
-                  <Database className="h-6 w-6 text-primary" />
+                  <Code className="h-6 w-6 text-primary" />
                 </div>
                 <div className="text-left">
-                  <h4 className="font-semibold text-lg">Database Management</h4>
+                  <h4 className="font-semibold text-lg">Real-Time Streaming</h4>
                   <p className="text-muted-foreground">
-                    Skilled in MongoDB & MySQL for designing scalable databases
-                    and implementing secure data operations.
+                    Real-time systems using Kafka, Apache Flink, Event Hub, and 
+                    Delta Lake with event-time processing and scalable microservices.
                   </p>
                 </div>
               </div>
@@ -86,15 +86,15 @@ export const AboutSection = () => {
                   <Briefcase className="h-6 w-6 text-primary" />
                 </div>
                 <div className="text-left">
-                  <h4 className="font-semibold text-lg">Problem Solving</h4>
+                  <h4 className="font-semibold text-lg">Cloud & MLOps</h4>
                   <p className="text-muted-foreground">
-                    Strong foundation in C, C++, OOPs, and data structures with
-                    problem-solving skills honed through hackathons &
-                    bootcamps.
+                    Production ML pipelines using MLflow, FastAPI, Docker, 
+                    Terraform, CI/CD with GitHub Actions & Jenkins across AWS & Azure.
                   </p>
                 </div>
               </div>
             </div>
+
           </div>
         </div>
       </div>
