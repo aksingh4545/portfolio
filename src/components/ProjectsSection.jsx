@@ -6,7 +6,7 @@ const projects = [
     title: "AI Data Assistant (Ollama + FastAPI)",
     description:
       "An intelligent data assistant that converts natural language questions into pandas queries using Mistral (Ollama). Built with FastAPI, it executes queries on structured datasets and returns both computed results and plain-language explanations.",
-    image: "/projects/ai-agent.jpg",
+    image: "/projects/ollama.jpg",
     tags: ["FastAPI", "Ollama", "Mistral", "Pandas", "Python", "LLM"],
     demoUrl: "#",
     githubUrl: "https://github.com/aksingh4545/ai-data-agent.git",
@@ -16,7 +16,7 @@ const projects = [
     title: "Real-Time Streaming Pipeline (Kafka + Flink)",
     description:
       "End-to-end real-time data processing system using Kafka for ingestion and Apache Flink for event-time processing. Containerized with Docker and designed for scalable, fault-tolerant stream analytics.",
-    image: "/projects/flink.jpg",
+    image: "/projects/flink.png",
     tags: ["Kafka", "Apache Flink", "Docker", "Streaming", "Event-Time"],
     demoUrl: "#",
     githubUrl: "https://github.com/aksingh4545/flink-kafka.git",
@@ -26,7 +26,7 @@ const projects = [
     title: "MLOps Pipeline with MLflow",
     description:
       "Production-ready ML system that predicts student performance. Includes ML pipeline training, MLflow model registry, FastAPI inference service, Dockerized deployment, and reproducible workflows.",
-    image: "/projects/mlops.jpg",
+    image: "/projects/mlflow.jpg",
     tags: ["MLflow", "FastAPI", "Docker", "MLOps", "Python"],
     demoUrl: "#",
     githubUrl: "https://github.com/aksingh4545/mlflow_pipeline.git",
@@ -46,7 +46,7 @@ const projects = [
     title: "Azure Event Hub Real-Time Architecture",
     description:
       "Cloud-native streaming system: Azure Event Hub → ADLS → Databricks → Delta Lake → Cosmos DB. Designed for reliable event-time processing and analytics-ready data serving.",
-    image: "/projects/azure.jpg",
+    image: "/projects/azure.png",
     tags: ["Azure", "Databricks", "Delta Lake", "Event Hub", "Cosmos DB"],
     demoUrl: "#",
     githubUrl: "https://github.com/aksingh4545/Event_hub.git",
@@ -56,7 +56,7 @@ const projects = [
     title: "Serverless Image Processing (AWS)",
     description:
       "Event-driven AWS architecture where images uploaded to S3 trigger Lambda-based resizing with Pillow. Processed images are stored and notifications sent via SNS.",
-    image: "/projects/aws-serverless.jpg",
+    image: "/projects/serverless.png",
     tags: ["AWS", "Lambda", "S3", "SNS", "Serverless"],
     demoUrl: "#",
     githubUrl: "https://github.com/aksingh4545/image_resize.git",
