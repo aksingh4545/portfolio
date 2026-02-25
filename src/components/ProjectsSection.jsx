@@ -16,7 +16,7 @@ const projects = [
     title: "Real-Time Streaming Pipeline (Kafka + Flink)",
     description:
       "End-to-end real-time data processing system using Kafka for ingestion and Apache Flink for event-time processing. Containerized with Docker and designed for scalable, fault-tolerant stream analytics.",
-    image: "/projects/flink-kafka.jpg",
+    image: "/projects/flink.jpg",
     tags: ["Kafka", "Apache Flink", "Docker", "Streaming", "Event-Time"],
     demoUrl: "#",
     githubUrl: "https://github.com/aksingh4545/flink-kafka.git",
